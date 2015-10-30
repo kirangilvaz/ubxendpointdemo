@@ -1,0 +1,25 @@
+serverParameters:
+   db2host: 23.246.250.68
+   db2dbname: UBXDEMO
+   db2user: db2inst1
+   db2pass: db2inst1
+   db2schema: UBXDATA
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 5566
+  adminConnectors:
+    - type: http
+      port: 5561
+
+# Logging settings.
+logging:
+
+  # The default level of all loggers. Can be OFF, ERROR, WARN, INFO, DEBUG, TRACE, or ALL.
+  level: INFO
+
+  appenders:
+    - type: console
+
+
